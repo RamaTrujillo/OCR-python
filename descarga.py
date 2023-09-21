@@ -9,5 +9,8 @@ def download_video(url, filename):
         file_path = os.path.join(current_dir, filename)
         stream.download(filename=file_path)
         print(f"Descarga completada: {filename}")
+        return True
     except Exception as e:
         print(f"Ocurrió un error: {str(e)}")
+        return False
+    
