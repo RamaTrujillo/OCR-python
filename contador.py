@@ -1,6 +1,5 @@
 import cv2
 import easyocr
-import numpy as np  # Importa la biblioteca numpy para manipular imágenes
 
 def count_word_occurrences_in_video(video_path, word_to_count, frames_per_second=1):
     reader = easyocr.Reader(['es'])
